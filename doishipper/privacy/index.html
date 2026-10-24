@@ -37,13 +37,15 @@ dữ liệu của mình. Tên các ứng dụng giao hàng trong game (Lá Xanh,
     hiển thị, chân dung), phần lãi trong tuần bạn góp cho đội, sticker cổ vũ và dòng hoạt động của đội</td><td>Chơi theo đội,
     rương đội, bảng đội. Thành viên trong đội thấy tên và phần góp của nhau; tên đội, biểu tượng, số thành viên và tổng điểm
     đội hiện cho mọi người chơi (danh sách đội đang tuyển, bảng đội)</td></tr>
+  <tr><td>Kênh thế giới: khi bạn phá sản trong game hoặc mua được ước mơ cao nhất, game gửi tên hiển thị của bạn, loại tin và
+    thời điểm</td><td>Hiện một dòng thông báo ở đầu sảnh cho mọi người chơi (máy chủ giữ 30 tin gần nhất)</td></tr>
   <tr><td>Tên đăng nhập (nếu bạn đăng ký). Mật khẩu do Unity xử lý, game không lưu</td><td>Đăng nhập lại trên máy khác</td></tr>
   <tr><td>Thông tin kỹ thuật do bộ công cụ Unity gửi khi kết nối (loại máy, phiên bản hệ điều hành, lỗi kết nối)</td><td>Vận hành và sửa lỗi dịch vụ</td></tr>
 </table>
 <p>Game <strong>không</strong> thu thập vị trí GPS (bản đồ trong game là thành phố giả lập), danh bạ, ảnh, tin nhắn hay số
 điện thoại, và không bán dữ liệu.</p>
 <p>Game <strong>không có chat</strong>. Nội dung do người chơi tự đặt chỉ gồm tên hiển thị và tên đội; cổ vũ trong đội dùng
-sticker có sẵn. Tên vi phạm (thô tục, xúc phạm, mạo danh) bị đổi hoặc xoá; muốn báo một tên, gửi email kèm tên đó tới
+sticker có sẵn, kênh thế giới chỉ có thông báo do game tạo. Tên vi phạm (thô tục, xúc phạm, mạo danh) bị đổi hoặc xoá; muốn báo một tên, gửi email kèm tên đó tới
 haipn993@gmail.com.</p>
 <p>Tiến trình chơi (tiền trong game, xe, đơn hàng, gói đã mua…) lưu trên máy của bạn và được sao lưu lên máy chủ Unity
 Cloud Save theo tài khoản game, để đăng nhập trên máy khác vẫn có lại. Xoá tài khoản thì bản sao lưu này cũng bị xoá.</p>
@@ -82,7 +84,7 @@ máy, không gửi dữ liệu đi đâu. Bạn tắt được trong cài đặt
     tuyến (mã người chơi, tên hiển thị) trên máy chủ, và tự rời đội nếu bạn đang ở trong đội.</li>
   <li><strong>Rời đội:</strong> màn đội › <em>Rời đội</em>. Tên và chân dung của bạn bị gỡ khỏi danh sách thành viên; phần lãi
     đã góp trong tuần vẫn tính vào tổng của đội nhưng không còn gắn với bạn. Dòng hoạt động của đội chỉ giữ 30 sự kiện gần
-    nhất, nên tên bạn trong các dòng cũ tự mất khi có sự kiện mới.</li>
+    nhất, nên tên bạn trong các dòng cũ tự mất khi có sự kiện mới. Kênh thế giới cũng chỉ giữ 30 tin gần nhất.</li>
   <li><strong>Xoá không cần mở game</strong> (ví dụ đã gỡ game): gửi email tới <strong>haipn993@gmail.com</strong>, tiêu đề
     "Xoá tài khoản Đời Shipper", kèm tên hiển thị của bạn. Chúng tôi xoá tài khoản, các dòng điểm trên bảng xếp hạng và gỡ bạn khỏi
     đội trong vòng 30 ngày.</li>
@@ -114,11 +116,13 @@ tạo tài khoản, hãy liên hệ để chúng tôi xoá.</p>
     (display name, portrait), the weekly income you contribute, preset cheer stickers and the team activity feed – team play,
     team chests and the team board. Team members see each other's names and contributions; team name, emblem, member count
     and team score are shown to all players (open-team list, team board).</li>
+  <li>World channel: when you go bankrupt in the game or buy the top dream, the game sends your display name, the kind of
+    news and the time – shown as a one-line notice at the top of the lobby to all players (the server keeps the latest 30).</li>
   <li>Your username if you register (passwords are handled by Unity; the game does not store them).</li>
   <li>Technical information sent by the Unity SDK when connecting (device model, OS version, connection errors) – to run and fix the service.</li>
 </ul>
 <p>We do not collect GPS location, contacts, photos, messages or phone numbers, and we do not sell data. There is <strong>no chat</strong>: the only player-created text is display names and team names
-(cheers use preset stickers). Offensive or impersonating names are changed or removed; to report one, email
+(cheers use preset stickers; the world channel only shows game-generated notices). Offensive or impersonating names are changed or removed; to report one, email
 haipn993@gmail.com with the name. Game progress
 (in-game money, vehicles, purchases) is stored on your device and backed up to Unity Cloud Save under your game account so
 you can continue on another device; deleting your account deletes this backup.</p>
@@ -140,7 +144,7 @@ game's server. Data is encrypted in transit (HTTPS).</p>
   <li>In the game: <em>Tôi</em> tab › <em>Xoá tài khoản</em> permanently deletes your online account and removes you from your team.</li>
   <li>Leaving a team (team screen › <em>Rời đội</em>) removes your name and portrait from the member list; this week's
     contribution stays in the team total without your name. The activity feed keeps only the latest 30 events, so older
-    lines with your name roll off.</li>
+    lines with your name roll off. The world channel also keeps only the latest 30 notices.</li>
   <li>Without the game: email <strong>haipn993@gmail.com</strong> with the subject "Delete Đời Shipper account" and your display
     name. We delete the account and its leaderboard entries, and remove you from your team, within 30 days.</li>
 </ul>
